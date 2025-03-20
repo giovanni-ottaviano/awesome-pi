@@ -12,11 +12,11 @@ Although we are used to thinking of it in relation with circles and angles, it c
 showing some not-so-usual formulas in which you can find $\pi$ (and calculating its digits) is precisely the purpose of this project!
 
 For now, the implemented methods are as follows:
-- Monte Carlo: Circle method ($C\! + \! +$)
-- Monte Carlo: Buffon's needle ($C\! + \! +$)
-- Function integration ($C\! + \! +$)
+- Monte Carlo: Circle method ($C++$)
+- Monte Carlo: Buffon's needle ($C++$)
+- Function integration ($C++$)
 - Leibniz series ($Python$)
-- Colliding blocks ($C\! + \! +$)
+- Colliding blocks ($C++$)
 
 A comparison of the results can be found in the *Jupyter Notebook*.
 
