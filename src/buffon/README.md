@@ -32,6 +32,7 @@ Since the exact solution for the probability involve the factor $\pi$, a simple 
 Let's see a quick proof for the exact formula for the probability $P$.\
 Consider a set of parallel lines equally spaced with distance $d$ and a collection of identical needles with length $l$. Let $x$ be the distance between the center needle 
 and the nearest parallel line ($x = 0$ a needle centered on a line) and $\theta$ be the acute angle between the needle and the line. Both follows uniform distributions:
+
 $$
 \begin{align*}
 f_X(x) &= \frac{2}{d} \qquad 0 \leq x \leq \frac{d}{2}   \\
@@ -42,7 +43,7 @@ and the joint probability is
 $$
 f_{X,\Theta}(x,\theta) = f_X(x) \, f_\Theta(\theta) = \frac{4}{\pi d} \qquad 0 \leq x \leq \frac{\pi}{2} \,\text{ and }\, 0 \leq x \leq \frac{d}{2}
 $$
-The needle crosses a line only if $x \leq \frac{l}{2} \sin\theta$. The total probability can be compute by integrating the $f_{X,\Theta}$. 
+The needle crosses a line only if $x \leq (l/2) \sin\theta$. The total probability can be compute by integrating the $f_{X,\Theta}$. 
 
 #### Short needle $\bigl( l \leq d \bigr)$
 $$
@@ -57,6 +58,7 @@ $$
 
 
 Reversing the formula for $P$ gives  a method of calculation for $\pi$:
+
 $$
 \pi = \frac{2l}{d} \frac{N}{N_{hit}}
 $$
@@ -66,9 +68,7 @@ where $P = N_{hit} / N$ can be approximated by "throwing" a huge number of needl
 in some calculation and add a bias in the results.
 
 ## Implementation
-The algorithm is implemented in $C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}$ for performance reasons, since the number of required samples is huge in order to get a 
-reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by
-specifying different input parameters.
+The algorithm is implemented in C++ for performance reasons, since the number of required samples is huge in order to get a reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by specifying different input parameters.
 
 The program requires $5$ input parameters:
 - Spacing: distance between the parallel lines
@@ -91,6 +91,7 @@ Every run of the program makes a new file in the **results** folder. The given e
 ## Results
 It's well known that Buffon's method, although it works, produces **poor results**, since it requires an excessive number of throws just for few correct digits of $\pi$.
 The example simulation produced the following result, which is fully compatible with the accepted value:
+
 $$
 \pi = 3.1415 \pm 0.0005
 $$

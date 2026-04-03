@@ -18,9 +18,7 @@ The latter class of methods is chosen, since Monte Carlo methods were already pr
 Here, it is implemented its most straightforward version, the *uniform sampling Monte Carlo*.
 
 ## Implementation
-The algorithm is implemented in $C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}$ for performance reasons, since the number of required samples is huge in order to get a 
-reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by
-specifying different input parameters.
+The algorithm is implemented in C++ for performance reasons, since the number of required samples is huge in order to get a reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by specifying different input parameters.
 
 The program requires $3$ input parameters:
 - Points: number of random needles sampled for the simulation
@@ -38,6 +36,7 @@ Every run of the program makes a new file in the **results** folder. The given e
 
 ## Results
 The example simulation produced the following result, which is fully compatible with the accepted value:
+
 $$
 \pi = 3.14158 \pm 0.00006
 $$

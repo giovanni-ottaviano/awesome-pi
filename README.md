@@ -12,16 +12,17 @@ Although we are used to thinking of it in relation with circles and angles, it c
 showing some not-so-usual formulas in which you can find $\pi$ (and calculating its digits) is precisely the purpose of this project!
 
 For now, the implemented methods are as follows:
-- Monte Carlo: Circle method ($C++$)
-- Monte Carlo: Buffon's needle ($C++$)
-- Function integration ($C++$)
-- Leibniz series ($Python$)
-- Colliding blocks ($C++$)
+- Monte Carlo: Circle method (C++)
+- Monte Carlo: Buffon's needle (C++)
+- Function integration (C++)
+- Leibniz series (Python)
+- Colliding blocks (C++)
+- Greatest Common Divisor (C++)
 
 A comparison of the results can be found in the *Jupyter Notebook*.
 
 ## Usage
-The **src** folder contains a different sub-folder for each method and a *Makefile* for compiling every given program in $C\! + \! +$.\
+The **src** folder contains a different sub-folder for each method and a *Makefile* for compiling every given program in C++.
 Every sub-folder contains a *README* file with a quick overview on the method and the specification for the algorithm, such as input parameters to customize the execution.
 
 The folder **results** contains the results after an example run for every method.

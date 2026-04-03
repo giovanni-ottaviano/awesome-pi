@@ -41,9 +41,7 @@ The area of the circle can be estimated using the probability of a point falling
 
 
 ## Implementation
-The algorithm is implemented in $C\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}$ for performance reasons, since the number of required samples is huge in order to get a 
-reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by
-specifying different input parameters.
+The algorithm is implemented in C++ for performance reasons, since the number of required samples is huge in order to get a reasonable result. The code is ready to be compiled using the given *Makefile* and the single simulation can be customize by specifying different input parameters.
 
 The program requires $4$ input parameters:
 - Radius: radius of the inscribed circle
@@ -63,6 +61,7 @@ Every run of the program makes a new file in the **results** folder. The given e
 
 ## Results
 The example simulation produced the following result, which is fully compatible with the accepted value:
+
 $$
 \pi = 3.1414 \pm 0.0002
 $$
